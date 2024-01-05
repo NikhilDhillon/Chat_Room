@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+{% block head %}
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"/>
+
+{% endblock %} 
+{% block content %}
+
+<form method="post" class="buttons">
+  <h3 class="h3">Chat Room</h3>
+  <div class="namediv">
+    <input
+      type="text"
+      placeholder="Pick a name!"
+      name="name"
+      value="{{name}}"
+    />
+  </div>
+  <div class="join">
+    <input type="text" placeholder="Room Code" name="code" value="{{code}}" />
+    <button class = "joinbtn" type="submit" name="join">Join a Room</button>
+  </div>
+  {% if error %}
+  <ul>
+    <li>{{error}}</li>
+  </ul>
+  {% endif %}
+</form>
+{% endblock %}
