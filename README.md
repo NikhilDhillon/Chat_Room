@@ -1,0 +1,1 @@
+The Chat Room is a sleek chat application, seamlessly integrating Python-Flask and Socket.IO on the backend for efficient server-side operations and real-time communication. The frontend, designed with HTML, CSS, and JavaScript, ensures an attractive and user-friendly interface, creating a dynamic platform for instant peer-to-peer conversations and an engaging user experience.
